@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang='uz'>
 <head>
-  <title>Ilm va Mehnat</title>
-  <link rel='stylesheet' href='style.css'>
+  <meta charset='UTF-8'>
+  <title>Ilm va Mehnat - Рўйхатдан ўтиш</title>
 </head>
 <body>
-  <h1>Ruyxatdan o‘tish</h1>
-  <form>
-    <input type='text' placeholder='FISH'>
-    <input type='text' placeholder='Pasport malumoti'>
-    <input type='text' placeholder='Telefon raqami'>
-    <select>
+  <h1>Рўйхатдан ўтиш</h1>
+  <form action="/submit" method="POST">
+    <input type='text' name='fullname' placeholder='ФИШ'><br>
+    <input type='text' name='passport' placeholder='Паспорт маълумоти'><br>
+    <input type='text' name='phone' placeholder='Телефон рақами'><br>
+    <select name='direction'>
       <option>Автослесарь</option>
       <option>Автоэлектрик</option>
       <option>Шиномонтажчи</option>
@@ -20,10 +20,8 @@
       <option>Компьютер диагностика</option>
       <option>Двигатель устаси</option>
       <option>Автосервис бошқарувчиси</option>
-    </select>
-    <textarea placeholder='Izoh (ихтиёрий)'></textarea>
-    <button>Yuborish</button>
+    </select><br>
+    <button type='submit'>Юбориш</button>
   </form>
-  <script src='script.js'></script>
 </body>
 </html>
