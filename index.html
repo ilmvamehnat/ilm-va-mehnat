@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <title>Рўйхатдан ўтиш</title>
+</head>
+<body>
+  <h1>Рўйхатдан ўтиш</h1>
+  <form action="/save" method="POST">
+    <input type="text" name="fullName" placeholder="ФИШ" required><br>
+    <input type="text" name="passport" placeholder="Паспорт маълумоти" required><br>
+    <input type="text" name="phone" placeholder="Телефон рақами" required><br>
+    <select name="specialty" required>
+      <option value="Автослесарь">Автослесарь</option>
+      <option value="Автоэлектрик">Автоэлектрик</option>
+      <option value="Шиномонтажчи">Шиномонтажчи</option>
+      <option value="Ходовой часть устаси">Ходовой часть устаси</option>
+      <option value="Кузовчи">Кузовчи</option>
+      <option value="Бояш устаси">Бояш устаси</option>
+      <option value="Компьютер диагностика">Компьютер диагностика</option>
+      <option value="Двигатель устаси">Двигатель устаси</option>
+      <option value="Автосервис бошқарувчиси">Автосервис бошқарувчиси</option>
+    </select><br>
+    <textarea name="notes" placeholder="Изоҳ (ихтиёрий)"></textarea><br>
+    <button type="submit">Юбориш</button>
+  </form>
+</body>
+</html>
